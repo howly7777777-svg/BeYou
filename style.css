@@ -2,6 +2,8 @@
 :root {
   --primary: #332673;
   --gold: #d9b34d;
+  --link: #3f2fa0;
+  --heading: #2f246f;
   --bg: #faf9f7;
   --text: #1a1a1f;
   --muted: #5c5c66;
@@ -50,7 +52,7 @@ nav {
 }
 
 nav a {
-  color: var(--primary);
+  color: var(--link);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -74,13 +76,17 @@ main {
 
 .card h2 {
   margin-top: 0;
-  color: var(--primary);
+  color: var(--heading);
   font-size: 1.15rem;
 }
 
 .card p:last-child { margin-bottom: 0; }
 
-a { color: var(--primary); }
+a { color: var(--link); }
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
 
 ul { padding-left: 1.25rem; }
 
@@ -103,7 +109,7 @@ footer {
 }
 
 h2.section {
-  color: var(--primary);
+  color: var(--heading);
   margin-top: 2rem;
   font-size: 1.25rem;
 }
@@ -126,5 +132,7 @@ h3 {
     --muted: #a8a6b3;
     --card: #1a1924;
     --border: #2e2d3a;
+    --link: #a99bff;
+    --heading: #c8beff;
   }
 }
